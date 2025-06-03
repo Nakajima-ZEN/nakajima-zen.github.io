@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ハンドルネームのポートフォリオ</title>
-  </head>
-  <body>
-    <h1>ハンドルネーム</h1>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>中島のポートフォリオ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1 class="fade-in">中島 冬翔</h1>
+    <p class="fade-in delay">卑屈な陰キャオタク</p>
+    <button id="toggle-theme">静岡やけど画面暗くなってきた。どういうことや</button>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#works">Works</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section hidden">
+    <h2>ナニモノ</h2>
+    <p>人工知能にお熱な大学生。</p>
+  </section>
+
+  <section id="works" class="section hidden">
+    <h2>作ったもの</h2>
+    <div class="card">
+      <h3>自作PC</h3>
+      <p>愛人です。一日のうち半分はこいつと遊んでます。</p>
+    </div>
+    <div class="card">
+      <h3>ローカルLLM</h3>
+      <p>好敵手です。一日のうち1/4はこいつと競ってます。</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section hidden">
+    <h2>アクセス</h2>
+    <p>リア凸：埼玉県さいたま市■区■■町■-■■■■-■-■■■</p>
+    <p>Slack：中島冬翔<a href="https://github.com/yourname" target="_blank">yourname</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 nakajima towa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
