@@ -1,0 +1,106 @@
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --accent: #00c9a7;
+}
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --accent: #90caf9;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+header.hero {
+  text-align: center;
+  padding: 100px 20px 40px;
+  background: linear-gradient(135deg, var(--accent), #5ee7df);
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+#toggle-theme {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#toggle-theme:hover {
+  background: #ddd;
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease-out;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card {
+  background: var(--bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  background: #eee;
+  color: #666;
+}
+
+/* Fade-in animations */
+.fade-in {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 1s ease forwards;
+}
+.fade-in.delay {
+  animation-delay: 0.5s;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
